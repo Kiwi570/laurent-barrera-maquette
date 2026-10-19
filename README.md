@@ -1,12 +1,17 @@
-# Laurent Barrera — maquette v1 « Sous-bois sacré »
+# Laurent Barrera — maquette v2 « Sous-bois sacré »
 
 Site statique (HTML, CSS, JavaScript), sans étape de construction, prêt pour Vercel (`vercel.json`, adresses propres).
 
-## Pages
+## Pages (v2, multipage)
 
-- `index.html` : accueil (ouverture, à paraître, démarche, séries, livres, parcours, distinctions, actualités, tirages, contact)
-- `series/*.html` : une page par série (Horses Kami, Carpes Koï, Animal, Protean, Shintô, Divers), avec visionneuse, loupe et vue au mur
-- `les-arbres-sacres-du-japon.html` : page du livre à paraître le 5 novembre 2026, compte à rebours, carte du chemin
+- `index.html` : accueil (ouverture, à paraître, démarche, aperçus de chaque rubrique)
+- `series/index.html` et `series/*.html` : les six séries, chacune avec visionneuse, loupe et vue au mur
+- `livres/index.html` et `livres/*.html` : catalogue et une fiche par livre (Les arbres sacrés du Japon, Koï, Esthétiques japonaises en photographie, Fragrances du Japon, Pleine Présence en Photographie)
+- `parcours.html` : démarche, cernes 2019-2026, expositions, prix, presse
+- `actualites.html` : derniers articles, archives 2026, lettre d'information (simulée)
+- `tirages.html` : vue au mur, choix dans les séries, demande de tirage
+- `contact.html` : coordonnées, formulaire, galeries et festivals
+- `les-arbres-sacres-du-japon.html` : redirige vers `livres/les-arbres-sacres-du-japon.html` (ancienne adresse de la v1)
 
 ## À compléter avec Laurent
 

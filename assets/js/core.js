@@ -135,21 +135,36 @@
       LB.toast('Simulation : rien n’a été envoyé.');
     });
   });
-  LB.prefill = function (subject, message) {
-    var form = d.getElementById('contact-form');
-    if (!form) { window.location.href = (DATA.prefix || '') + 'index.html#contact'; return; }
-    var sel = form.querySelector('#f-subject'), msg = form.querySelector('#f-message');
-    if (sel && subject) sel.value = subject;
+  function fillForm(form, subject, message) {
+    var sel = form.querySelector('select[name="subject"]'), msg = form.querySelector('textarea');
+    if (sel && subject) { for (var k = 0; k < sel.options.length; k++) if (sel.options[k].text === subject) sel.selectedIndex = k; }
     if (msg && message) msg.value = message;
-    var target = d.getElementById('contact');
-    if (LB.lenis) LB.lenis.scrollTo(target, { offset: -40, duration: 1.6 }); else target.scrollIntoView();
+    var target = form.closest('section') || form;
+    if (LB.lenis) LB.lenis.scrollTo(target, { offset: -40, duration: 1.4 }); else target.scrollIntoView();
     setTimeout(function () { if (msg) msg.focus({ preventScroll: true }); }, 900);
+  }
+  LB.prefill = function (subject, message, page) {
+    var form = d.querySelector('form[data-prefill-target]');
+    if (!form) {
+      store.sset('lb-prefill', JSON.stringify({ s: subject || '', m: message || '' }));
+      window.location.href = (DATA.prefix || '') + (page || 'contact.html');
+      return;
+    }
+    fillForm(form, subject, message);
+  };
+  LB.restorePrefill = function () {
+    var raw = store.sget('lb-prefill');
+    if (!raw) return;
+    store.sdel('lb-prefill');
+    var form = d.querySelector('form[data-prefill-target]');
+    if (!form) return;
+    try { var o = JSON.parse(raw); fillForm(form, o.s, o.m); } catch (e) {}
   };
   d.addEventListener('click', function (e) {
     var p = e.target.closest('[data-prefill]');
     if (!p) return;
     e.preventDefault();
-    LB.prefill(p.getAttribute('data-prefill'), p.getAttribute('data-message'));
+    LB.prefill(p.getAttribute('data-prefill'), p.getAttribute('data-message'), p.getAttribute('data-prefill-page'));
   });
 
   /* ---------- Cart (simulated) ---------- */
@@ -489,9 +504,9 @@
   d.addEventListener('click', function (e) {
     var b = e.target.closest('[data-add-cart]');
     if (!b) return;
-    LB.addToCart(b.getAttribute('data-add-cart'), d.querySelector(b.getAttribute('data-from')) || b.closest('[data-book-card]'));
+    LB.addToCart(b.getAttribute('data-add-cart'), b.closest('[data-book-card]') || d.querySelector('[data-book-card]'));
   });
 
   var domReady = new Promise(function (res) { if (d.readyState === 'complete') res(); else d.addEventListener('DOMContentLoaded', function () { res(); }, { once: true }); });
-  Promise.all([fontsReady, domReady]).then(function () { spores(); start(); LB.started = true; });
+  Promise.all([fontsReady, domReady]).then(function () { spores(); start(); LB.started = true; setTimeout(LB.restorePrefill, 600); });
 })();

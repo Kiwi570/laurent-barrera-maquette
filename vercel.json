@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/les-arbres-sacres-du-japon",
+      "destination": "/livres/les-arbres-sacres-du-japon",
+      "permanent": false
+    }
+  ]
 }
