@@ -5,34 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Laurent Barrera</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Laurent Barrera, auteur et photographe à Toulon : séries photographiques, livres et tirages d’art. Les arbres sacrés du Japon paraît le 5 novembre 2026.">
+<meta name="description" content="Laurent Barrera, auteur et photographe à Toulon : séries photographiques, livres et tirages d’art. Les arbres sacrés du Japon paraît le 5 novembre 2026.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0e1210">
 <meta property="og:title" content="Laurent Barrera">
-<meta property="og:description" content="Laurent Barrera, auteur et photographe à Toulon : séries photographiques, livres et tirages d’art. Les arbres sacrés du Japon paraît le 5 novembre 2026.">
+<meta property="og:description" content="Laurent Barrera, auteur et photographe à Toulon : séries photographiques, livres et tirages d’art. Les arbres sacrés du Japon paraît le 5 novembre 2026.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://laurent-barrera-maquette.vercel.app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
-<link rel="preload" href="assets/fonts/fraunces-var.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/fonts/instrument-sans-var.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="assets/css/lenis.css">
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css?v=6b0a949f">
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="index.html" aria-label="Laurent Barrera, accueil"><img src="assets/img/logo/enso-320.webp" alt="" width="34" height="34"><span>Laurent Barrera</span></a>
+    <a class="brand" href="./" aria-label="Laurent Barrera, accueil"><img src="assets/img/logo/enso-320.webp" alt="" width="34" height="34"><span>Laurent Barrera</span></a>
     <nav class="nav" aria-label="Navigation principale">
-      <a href="series/index.html">Séries</a>
-      <a href="livres/index.html">Livres</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="tirages.html">Tirages</a>
-      <a href="contact.html">Contact</a>
+      <a href="series">Séries</a>
+      <a href="livres">Livres</a>
+      <a href="parcours">Parcours</a>
+      <a href="actualites">Actualités</a>
+      <a href="tirages">Tirages</a>
+      <a href="contact">Contact</a>
     </nav>
     <div class="header-tools">
-      <a class="pill-release" href="livres/les-arbres-sacres-du-japon.html"><i aria-hidden="true"></i><span class="long">Arbres sacrés · </span><span data-days-left>J-17</span><span class="sr-only"> avant la parution du livre Les arbres sacrés du Japon</span></a>
-      <button class="calm-toggle" type="button" data-calm-toggle aria-pressed="false" aria-label="Mode calme : réduire les animations"><span class="dot" aria-hidden="true"></span><span class="label" aria-hidden="true">Mode calme</span></button>
+      <a class="pill-release" href="livres/les-arbres-sacres-du-japon"><i aria-hidden="true"></i><span class="long">Arbres sacrés · </span><span data-days-left>J-17</span><span class="sr-only" data-released-text=", le livre Les arbres sacrés du Japon est paru"> avant la parution du livre Les arbres sacrés du Japon</span></a>
+      <button class="calm-toggle" type="button" data-calm-toggle aria-pressed="false" aria-label="Mode calme : réduire les animations"><span class="dot" aria-hidden="true"></span><span class="label" aria-hidden="true">Mode calme</span></button>
       <button class="icon-btn" type="button" data-open-cart aria-label="Ouvrir le panier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="cart-count" hidden>0</span></button>
       <button class="icon-btn menu-btn" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
     </div>
@@ -40,14 +46,14 @@
 </header>
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <button class="icon-btn mobile-menu__close" type="button" data-menu-close aria-label="Fermer le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-  <a href="index.html">Accueil</a>
-  <a href="series/index.html">Séries</a>
-  <a href="livres/index.html">Livres</a>
-  <a href="parcours.html">Parcours</a>
-  <a href="actualites.html">Actualités</a>
-  <a href="tirages.html">Tirages</a>
-  <a href="contact.html">Contact</a>
-  <a href="livres/les-arbres-sacres-du-japon.html">Les arbres sacrés</a>
+  <a href="./">Accueil</a>
+  <a href="series">Séries</a>
+  <a href="livres">Livres</a>
+  <a href="parcours">Parcours</a>
+  <a href="actualites">Actualités</a>
+  <a href="tirages">Tirages</a>
+  <a href="contact">Contact</a>
+  <a href="livres/les-arbres-sacres-du-japon">Les arbres sacrés</a>
   <p class="mono">laurentbarrera@hotmail.com · 06 64 63 23 11</p>
 </div>
 <div class="veil" aria-hidden="true"></div>
@@ -68,7 +74,7 @@
       </figure>
       <div class="hero__text">
         <p class="eyebrow mono">Auteur et photographe · Toulon</p>
-        <h1 class="hero__name" id="hero-title"><span class="line">Laurent</span><span class="line">Barrera</span></h1>
+        <h1 class="hero__name" id="hero-title" aria-label="Laurent Barrera"><span class="line" aria-hidden="true">Laurent</span><span class="line" aria-hidden="true">Barrera</span></h1>
         <p class="hero__haiku">« J’explore ces éclats d’éphémère comme on façonne des haïkus visuels. »</p>
         <a class="hero__cue mono" href="#a-paraitre"><span class="stem" aria-hidden="true"></span>Entrer dans le sous-bois</a>
       </div>
@@ -80,14 +86,14 @@
       <div class="release__stage">
         <svg class="rings" viewBox="0 0 600 600" aria-hidden="true"><circle cx="300" cy="300" r="70" stroke-width="0.6" stroke-opacity="0.55"></circle><circle cx="300" cy="300" r="97" stroke-width="1.1" stroke-opacity="0.51"></circle><circle cx="300" cy="300" r="124" stroke-width="1.6" stroke-opacity="0.46"></circle><circle cx="300" cy="300" r="151" stroke-width="0.6" stroke-opacity="0.42"></circle><circle cx="300" cy="300" r="178" stroke-width="1.1" stroke-opacity="0.37"></circle><circle cx="300" cy="300" r="205" stroke-width="1.6" stroke-opacity="0.33"></circle><circle cx="300" cy="300" r="232" stroke-width="0.6" stroke-opacity="0.28"></circle><circle cx="300" cy="300" r="259" stroke-width="1.1" stroke-opacity="0.24"></circle><circle cx="300" cy="300" r="286" stroke-width="1.6" stroke-opacity="0.19"></circle></svg>
         <div class="book3d" style="--ar:551 / 850"><div class="book3d__inner">
-          <div class="book3d__face book3d__front"><img src="assets/img/livres/arbres-sacres-couverture-551.webp" srcset="assets/img/livres/arbres-sacres-couverture-320.webp 320w, assets/img/livres/arbres-sacres-couverture-551.webp 551w" sizes="(max-width: 900px) 50vw, 320px" width="551" height="850" alt="Couverture du livre Les arbres sacrés du Japon : un tronc immense couvert de mousse, ceint d’une corde sacrée" loading="lazy" decoding="async"></div>
+          <div class="book3d__face book3d__front"><img src="assets/img/livres/arbres-sacres-couverture-551.webp" srcset="assets/img/livres/arbres-sacres-couverture-320.webp 320w, assets/img/livres/arbres-sacres-couverture-551.webp 551w" sizes="(max-width: 900px) 50vw, 320px" width="551" height="850" alt="Couverture du livre Les arbres sacrés du Japon : un tronc immense couvert de mousse, ceint d’une corde sacrée" loading="lazy" decoding="async"></div>
           <div class="book3d__face book3d__spine" aria-hidden="true"></div>
           <div class="book3d__face book3d__pages" aria-hidden="true"></div>
           <div class="book3d__face book3d__back" aria-hidden="true"></div>
         </div><div class="book3d__shadow" aria-hidden="true"></div></div>
       </div>
       <div>
-        <p class="eyebrow mono">À paraître le 5 novembre 2026</p>
+        <p class="eyebrow mono" data-released-text="Paru le 5 novembre 2026">À paraître le 5 novembre 2026</p>
         <h2 class="release__title" id="release-title" data-focus>Les arbres sacrés du Japon</h2>
         <p class="release__subtitle">Quand les arbres deviennent présence</p>
         <div class="release__meta mono mono--plain"><span><b>Éditions Le Prunier SULLY</b></span><span><b>22 €</b></span><span>Photographies et récits</span></div>
@@ -101,8 +107,8 @@
       </div>
         <p class="release__text">Des forêts anciennes de Yakushima aux camphriers monumentaux de Kyūshū, Laurent Barrera parcourt le Japon à la rencontre de ces arbres millénaires vénérés comme des présences vivantes.</p>
         <div class="btn-row">
-          <a class="btn btn--primary" href="https://www.amazon.fr/arbres-sacr%C3%A9s-du-Japon/dp/2354323816" target="_blank" rel="noopener" data-magnetic data-attract>Précommander sur Amazon <span class="arrow" aria-hidden="true">↗</span></a>
-          <a class="btn" href="livres/les-arbres-sacres-du-japon.html" data-magnetic>Découvrir le livre <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--primary" href="https://www.amazon.fr/arbres-sacr%C3%A9s-du-Japon/dp/2354323816" target="_blank" rel="noopener" data-magnetic data-attract><span data-released-text="Commander sur Amazon">Précommander sur Amazon</span> <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn" href="livres/les-arbres-sacres-du-japon" data-magnetic>Découvrir le livre <span class="arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -114,7 +120,7 @@
         <h2 class="eyebrow mono" id="manifesto-title">La démarche</h2>
         <p class="manifesto__text" style="margin-top: 28px">La nature est mon terrain d’expression privilégié : mon refuge, mon laboratoire, ma première source d’inspiration. Son mystère, ses lumières mouvantes, ses instants fragiles nourrissent mon regard et mon écriture. Photographe et auteur, j’explore ces éclats d’éphémère comme on façonne des <span class="hl">haïkus visuels</span> : des images épurées, denses, ciselées, qui invitent à la poésie et ouvrent un dialogue silencieux avec celui qui les contemple.</p>
         <p class="manifesto__more">Chaque photographie devient trace, résonance, fragment de destin. Cette quête intime m’a naturellement conduit vers le Japon. J’y ai trouvé une esthétique, un monde où la beauté réside dans l’impermanence, dans la fragilité des choses, dans le presque rien.</p>
-        <p style="margin-top: 32px"><a class="more mono" href="parcours.html">Le parcours de Laurent <span aria-hidden="true">→</span></a></p>
+        <p style="margin-top: 32px"><a class="more mono" href="parcours">Le parcours de Laurent <span aria-hidden="true">→</span></a></p>
       </div>
       <aside class="manifesto__aside" aria-label="L’auteur">
         <figure class="manifesto__photo"><div data-unveil><img src="assets/img/oeuvres/shinto/cascade-branche-960.webp" srcset="assets/img/oeuvres/shinto/cascade-branche-480.webp 480w, assets/img/oeuvres/shinto/cascade-branche-960.webp 960w, assets/img/oeuvres/shinto/cascade-branche-1600.webp 1600w, assets/img/oeuvres/shinto/cascade-branche-2400.webp 2400w" sizes="(max-width: 900px) 90vw, 32vw" width="3000" height="4000" alt="Branche fine devant une cascade floue" loading="lazy" decoding="async"></div><figcaption class="mono mono--plain">Série Shintô</figcaption></figure>
@@ -127,32 +133,32 @@
   <section class="series section-pad" id="series" aria-labelledby="series-title">
     <div class="wrap series-head">
       <div><p class="eyebrow mono">Travaux photographiques</p><h2 class="h2" id="series-title" data-focus>Six séries, <em>six clairières</em></h2></div>
-      <div class="series-head__side"><p class="lead">Chaque série est une salle. Les photographies y sont montrées entières, sans recadrage.</p><a class="more mono" href="series/index.html">Toutes les séries <span aria-hidden="true">→</span></a></div>
+      <div class="series-head__side"><p class="lead">Chaque série est une salle. Les photographies y sont montrées entières, sans recadrage.</p><a class="more mono" href="series">Toutes les séries <span aria-hidden="true">→</span></a></div>
     </div>
     <div class="hscroll">
       <div class="hscroll__track">
-        <a class="series-card" href="series/horses-kami.html" data-color="#847c6d" data-cursor="Entrer" style="--r:1.000">
-          <div class="series-card__media"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="(max-width: 900px) 82vw, 70vw" width="7604" height="7604" alt="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/horses-kami" data-color="#847c6d" data-cursor="Entrer" style="--r:1.000">
+          <div class="series-card__media"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="(max-width: 900px) 82vw, min(56.0vh, 620px, 86vw)" width="7604" height="7604" alt="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Les chevaux</span><span class="series-card__name">Horses Kami</span><span class="series-card__count mono">9 photographies</span><span class="series-card__fact">Silver Award, Budapest International Foto Awards, 2021</span></div>
         </a>
-        <a class="series-card" href="series/koi.html" data-color="#2d2923" data-cursor="Entrer" style="--r:1.333">
-          <div class="series-card__media"><img src="assets/img/oeuvres/koi/koi-branches-remous-1600.webp" srcset="assets/img/oeuvres/koi/koi-branches-remous-480.webp 480w, assets/img/oeuvres/koi/koi-branches-remous-960.webp 960w, assets/img/oeuvres/koi/koi-branches-remous-1600.webp 1600w, assets/img/oeuvres/koi/koi-branches-remous-2400.webp 2400w" sizes="(max-width: 900px) 82vw, 70vw" width="3458" height="2594" alt="Carpes koï orange et rouge dans le reflet de branches, un remous au centre" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/koi" data-color="#2d2923" data-cursor="Entrer" style="--r:1.333">
+          <div class="series-card__media"><img src="assets/img/oeuvres/koi/koi-branches-remous-1600.webp" srcset="assets/img/oeuvres/koi/koi-branches-remous-480.webp 480w, assets/img/oeuvres/koi/koi-branches-remous-960.webp 960w, assets/img/oeuvres/koi/koi-branches-remous-1600.webp 1600w, assets/img/oeuvres/koi/koi-branches-remous-2400.webp 2400w" sizes="(max-width: 900px) 82vw, min(74.7vh, 827px, 86vw)" width="3458" height="2594" alt="Carpes koï orange et rouge dans le reflet de branches, un remous au centre" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Koï</span><span class="series-card__name">Carpes Koï</span><span class="series-card__count mono">9 photographies</span><span class="series-card__fact">Premier prix du livre photo, Festival international de Namur, 2022</span></div>
         </a>
-        <a class="series-card" href="series/animal.html" data-color="#f5f5f5" data-cursor="Entrer" style="--r:1.333">
-          <div class="series-card__media"><img src="assets/img/oeuvres/animal/bouquetins-brume-1600.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) 82vw, 70vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/animal" data-color="#f5f5f5" data-cursor="Entrer" style="--r:1.333">
+          <div class="series-card__media"><img src="assets/img/oeuvres/animal/bouquetins-brume-1600.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) 82vw, min(74.7vh, 827px, 86vw)" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Bestiaire</span><span class="series-card__name">Animal</span><span class="series-card__count mono">6 photographies</span><span class="series-card__fact">Lauréat du concours Photo Magazine 2024, catégorie animaux</span></div>
         </a>
-        <a class="series-card" href="series/protean.html" data-color="#83816e" data-cursor="Entrer" style="--r:0.750">
-          <div class="series-card__media"><img src="assets/img/oeuvres/protean/lune-arbre-mort-600.webp" srcset="assets/img/oeuvres/protean/lune-arbre-mort-480.webp 480w, assets/img/oeuvres/protean/lune-arbre-mort-600.webp 600w" sizes="(max-width: 900px) 82vw, 70vw" width="600" height="800" alt="Branches d'un arbre mort sous un fin croissant de lune" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/protean" data-color="#83816e" data-cursor="Entrer" style="--r:0.750">
+          <div class="series-card__media"><img src="assets/img/oeuvres/protean/lune-arbre-mort-600.webp" srcset="assets/img/oeuvres/protean/lune-arbre-mort-480.webp 480w, assets/img/oeuvres/protean/lune-arbre-mort-600.webp 600w" sizes="(max-width: 900px) 82vw, min(42.0vh, 465px, 86vw)" width="600" height="800" alt="Branches d'un arbre mort sous un fin croissant de lune" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Série 2023</span><span class="series-card__name">Protean</span><span class="series-card__count mono">9 photographies</span><span class="series-card__fact">Exposée à l’Hôtel Spa Le Calendal, Arles, 2024</span></div>
         </a>
-        <a class="series-card" href="series/shinto.html" data-color="#b3ac9a" data-cursor="Entrer" style="--r:0.750">
-          <div class="series-card__media"><img src="assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp" srcset="assets/img/oeuvres/shinto/temple-brume-montagne-480.webp 480w, assets/img/oeuvres/shinto/temple-brume-montagne-960.webp 960w, assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp 1600w, assets/img/oeuvres/shinto/temple-brume-montagne-2400.webp 2400w" sizes="(max-width: 900px) 82vw, 70vw" width="3621" height="4828" alt="Temple de bois au pied de montagnes dans la brume" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/shinto" data-color="#b3ac9a" data-cursor="Entrer" style="--r:0.750">
+          <div class="series-card__media"><img src="assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp" srcset="assets/img/oeuvres/shinto/temple-brume-montagne-480.webp 480w, assets/img/oeuvres/shinto/temple-brume-montagne-960.webp 960w, assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp 1600w, assets/img/oeuvres/shinto/temple-brume-montagne-2400.webp 2400w" sizes="(max-width: 900px) 82vw, min(42.0vh, 465px, 86vw)" width="3621" height="4828" alt="Temple de bois au pied de montagnes dans la brume" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Shin Tô</span><span class="series-card__name">Shintô</span><span class="series-card__count mono">6 photographies</span><span class="series-card__fact">Exposée à Hyères, Montréal et Belpech, 2024 et 2025</span></div>
         </a>
-        <a class="series-card" href="series/divers.html" data-color="#554630" data-cursor="Entrer" style="--r:1.333">
-          <div class="series-card__media"><img src="assets/img/oeuvres/divers/aube-brume-maison-1600.webp" srcset="assets/img/oeuvres/divers/aube-brume-maison-480.webp 480w, assets/img/oeuvres/divers/aube-brume-maison-960.webp 960w, assets/img/oeuvres/divers/aube-brume-maison-1600.webp 1600w, assets/img/oeuvres/divers/aube-brume-maison-2400.webp 2400w" sizes="(max-width: 900px) 82vw, 70vw" width="4952" height="3714" alt="Silhouette d'une maison dans la brume de l'aube" loading="lazy" decoding="async"></div>
+        <a class="series-card" href="series/divers" data-color="#554630" data-cursor="Entrer" style="--r:1.333">
+          <div class="series-card__media"><img src="assets/img/oeuvres/divers/aube-brume-maison-1600.webp" srcset="assets/img/oeuvres/divers/aube-brume-maison-480.webp 480w, assets/img/oeuvres/divers/aube-brume-maison-960.webp 960w, assets/img/oeuvres/divers/aube-brume-maison-1600.webp 1600w, assets/img/oeuvres/divers/aube-brume-maison-2400.webp 2400w" sizes="(max-width: 900px) 82vw, min(74.7vh, 827px, 86vw)" width="4952" height="3714" alt="Silhouette d'une maison dans la brume de l'aube" loading="lazy" decoding="async"></div>
           <div class="series-card__meta"><span class="series-card__idx mono">Hors série</span><span class="series-card__name">Divers</span><span class="series-card__count mono">4 photographies</span><span class="series-card__fact">Photographies hors série</span></div>
         </a>
       </div>
@@ -164,14 +170,14 @@
     <div class="wrap">
       <div class="shelf-head">
         <div><p class="eyebrow mono">Livres</p><h2 class="h2" id="books-title" data-focus>Cinq livres, <em>un même regard</em></h2></div>
-        <a class="more mono" href="livres/index.html">Tous les livres <span aria-hidden="true">→</span></a>
+        <a class="more mono" href="livres">Tous les livres <span aria-hidden="true">→</span></a>
       </div>
       <div class="shelf shelf--links">
-        <a class="shelf-book" href="livres/les-arbres-sacres-du-japon.html" data-cursor="Ouvrir"><span class="shelf-book__cover"><span class="shelf-book__badge mono">À paraître</span><img src="assets/img/livres/arbres-sacres-couverture-551.webp" srcset="assets/img/livres/arbres-sacres-couverture-320.webp 320w, assets/img/livres/arbres-sacres-couverture-551.webp 551w" sizes="(max-width: 900px) 34vw, 18vw" width="551" height="850" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">5 novembre 2026</span><span class="shelf-book__title">Les arbres sacrés du Japon</span></a>
-        <a class="shelf-book" href="livres/pleine-presence-en-photographie.html" data-cursor="Ouvrir"><span class="shelf-book__cover is-photo"><img src="assets/img/livres/pleine-presence-liseuse-480.webp" srcset="assets/img/livres/pleine-presence-liseuse-480.webp 480w, assets/img/livres/pleine-presence-liseuse-1024.webp 1024w" sizes="(max-width: 900px) 34vw, 18vw" width="1024" height="1536" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Février 2026</span><span class="shelf-book__title">Pleine Présence en Photographie</span></a>
-        <a class="shelf-book" href="livres/esthetiques-japonaises-en-photographie.html" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/esthetiques-fr-couverture-640.webp" srcset="assets/img/livres/esthetiques-fr-couverture-320.webp 320w, assets/img/livres/esthetiques-fr-couverture-640.webp 640w, assets/img/livres/esthetiques-fr-couverture-953.webp 953w" sizes="(max-width: 900px) 34vw, 18vw" width="953" height="1488" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Décembre 2025</span><span class="shelf-book__title">Esthétiques japonaises en photographie</span></a>
-        <a class="shelf-book" href="livres/fragrances-du-japon.html" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/fragrances-couverture-640.webp" srcset="assets/img/livres/fragrances-couverture-320.webp 320w, assets/img/livres/fragrances-couverture-640.webp 640w, assets/img/livres/fragrances-couverture-970.webp 970w" sizes="(max-width: 900px) 34vw, 18vw" width="970" height="1478" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Octobre 2025</span><span class="shelf-book__title">Fragrances du Japon</span></a>
-        <a class="shelf-book" href="livres/koi.html" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/koi-couverture-640.webp" srcset="assets/img/livres/koi-couverture-320.webp 320w, assets/img/livres/koi-couverture-640.webp 640w, assets/img/livres/koi-couverture-1200.webp 1200w" sizes="(max-width: 900px) 34vw, 18vw" width="1735" height="2314" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Septembre 2022</span><span class="shelf-book__title">Koï</span></a>
+        <a class="shelf-book" href="livres/les-arbres-sacres-du-japon" data-cursor="Ouvrir"><span class="shelf-book__cover"><span class="shelf-book__badge mono" data-released-text="Nouveau">À paraître</span><img src="assets/img/livres/arbres-sacres-couverture-551.webp" srcset="assets/img/livres/arbres-sacres-couverture-320.webp 320w, assets/img/livres/arbres-sacres-couverture-551.webp 551w" sizes="(max-width: 900px) 34vw, 18vw" width="551" height="850" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">5 novembre 2026</span><span class="shelf-book__title">Les arbres sacrés du Japon</span></a>
+        <a class="shelf-book" href="livres/pleine-presence-en-photographie" data-cursor="Ouvrir"><span class="shelf-book__cover is-photo"><img src="assets/img/livres/pleine-presence-liseuse-480.webp" srcset="assets/img/livres/pleine-presence-liseuse-480.webp 480w, assets/img/livres/pleine-presence-liseuse-1024.webp 1024w" sizes="(max-width: 900px) 34vw, 18vw" width="1024" height="1536" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Février 2026</span><span class="shelf-book__title">Pleine Présence en Photographie</span></a>
+        <a class="shelf-book" href="livres/esthetiques-japonaises-en-photographie" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/esthetiques-fr-couverture-640.webp" srcset="assets/img/livres/esthetiques-fr-couverture-320.webp 320w, assets/img/livres/esthetiques-fr-couverture-640.webp 640w, assets/img/livres/esthetiques-fr-couverture-953.webp 953w" sizes="(max-width: 900px) 34vw, 18vw" width="953" height="1488" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Décembre 2025</span><span class="shelf-book__title">Esthétiques japonaises en photographie</span></a>
+        <a class="shelf-book" href="livres/fragrances-du-japon" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/fragrances-couverture-640.webp" srcset="assets/img/livres/fragrances-couverture-320.webp 320w, assets/img/livres/fragrances-couverture-640.webp 640w, assets/img/livres/fragrances-couverture-970.webp 970w" sizes="(max-width: 900px) 34vw, 18vw" width="970" height="1478" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Octobre 2025</span><span class="shelf-book__title">Fragrances du Japon</span></a>
+        <a class="shelf-book" href="livres/koi" data-cursor="Ouvrir"><span class="shelf-book__cover"><img src="assets/img/livres/koi-couverture-640.webp" srcset="assets/img/livres/koi-couverture-320.webp 320w, assets/img/livres/koi-couverture-640.webp 640w, assets/img/livres/koi-couverture-1200.webp 1200w" sizes="(max-width: 900px) 34vw, 18vw" width="1735" height="2314" alt="" loading="lazy" decoding="async"></span><span class="shelf-book__label mono">Septembre 2022</span><span class="shelf-book__title">Koï</span></a>
       </div>
     </div>
   </section>
@@ -188,7 +194,7 @@
             <svg viewBox="0 0 600 600" aria-hidden="true"><circle class="ring" data-year="2019" cx="300" cy="300" r="64" stroke-width="2.4"></circle><circle class="ring" data-year="2020" cx="300" cy="300" r="94" stroke-width="3.2"></circle><circle class="ring" data-year="2021" cx="300" cy="300" r="124" stroke-width="9.1"></circle><circle class="ring" data-year="2022" cx="300" cy="300" r="154" stroke-width="10.0"></circle><circle class="ring" data-year="2023" cx="300" cy="300" r="184" stroke-width="7.5"></circle><circle class="ring" data-year="2024" cx="300" cy="300" r="214" stroke-width="11.7"></circle><circle class="ring" data-year="2025" cx="300" cy="300" r="244" stroke-width="9.1"></circle><circle class="ring is-future is-active" data-year="2026" cx="300" cy="300" r="274" stroke-width="8.3"></circle></svg>
             <div class="trunk__year" aria-hidden="true"><div><b>2026</b><span class="mono">1 expo · 3 publications · 4 presse</span></div></div>
           </div>
-          <p class="trunk__legend mono mono--plain">De 2019, au cœur, à 2026, en pointillé : l’année n’est pas terminée.</p></div>
+          <p class="trunk__legend mono mono--plain">De 2019, au cœur, à 2026, en pointillé : l’année n’est pas terminée.</p></div>
         <div>
           <div class="tally">
             <div><b data-count="24">24</b><span class="mono">Expositions</span></div>
@@ -198,7 +204,7 @@
           </div>
           <p class="eyebrow mono" style="margin-bottom: 8px">Récemment</p>
           <ul class="highlights"><li><span class="mono">Juin 2026</span><span>Chasseur d’Images n° 476 : quatre pages et un entretien</span></li><li><span class="mono">Mars 2026</span><span>« Les Escales artistiques », Docks de Marseille</span></li><li><span class="mono">Nov. 2024</span><span>Photo of the Month, Decagon Gallery, New York</span></li></ul>
-          <div class="btn-row" style="margin-top: 32px"><a class="btn" href="parcours.html" data-magnetic>Voir tout le parcours <span class="arrow" aria-hidden="true">→</span></a></div>
+          <div class="btn-row" style="margin-top: 32px"><a class="btn" href="parcours" data-magnetic>Voir tout le parcours <span class="arrow" aria-hidden="true">→</span></a></div>
         </div>
       </div>
     </div>
@@ -217,7 +223,7 @@
     <div class="wrap">
       <div class="series-head">
         <div><p class="eyebrow mono">Actualités</p><h2 class="h2" id="news-title" data-focus>Carnet <em>de route</em></h2></div>
-        <a class="more mono" href="actualites.html">Toutes les actualités <span aria-hidden="true">→</span></a>
+        <a class="more mono" href="actualites">Toutes les actualités <span aria-hidden="true">→</span></a>
       </div>
       <div class="news-grid" data-stagger>
         <a class="news-card" href="https://www.laurentbarrera.com/post/esthétiques-japonaises-en-photographie-paraît-en-allemand" target="_blank" rel="noopener" data-tilt="4"><div class="news-card__media"><img src="assets/img/livres/esthetiques-de-couverture-640.webp" srcset="assets/img/livres/esthetiques-de-couverture-320.webp 320w, assets/img/livres/esthetiques-de-couverture-640.webp 640w, assets/img/livres/esthetiques-de-couverture-1200.webp 1200w" sizes="(max-width: 560px) 112px, (max-width: 1100px) 46vw, 24vw" width="1705" height="2600" alt="" loading="lazy" decoding="async"></div><div class="news-card__body"><span class="mono">25 sept. 2026 · 1 min de lecture</span><h3>Esthétiques japonaises en photographie paraît en allemand</h3><p>L’édition allemande rejoint les éditions française, anglaise, espagnole et italienne.</p></div></a>
@@ -238,7 +244,7 @@
         <div>
           <div class="wall" data-wall>
             <img class="wall__bg" src="assets/img/grok/mur-galerie-16x9-1168.webp" alt="" width="1168" height="784" loading="lazy">
-            <div class="wall__art" style="width:33.904%;height:37.883%;left:33.048%;top:19.324%"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="40vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
+            <div class="wall__art" style="width:33.904%;height:37.883%;left:33.048%;top:19.324%"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) 45vw, 27vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
             <div class="wall__dim mono mono--plain" style="width:33.904%;left:33.048%;top:58.737%"><span>90 × 68 cm</span></div>
             <p class="wall__note mono mono--plain">Échelle approximative · banc de 120 cm</p>
           </div>
@@ -246,13 +252,13 @@
             <div class="wall-thumbs" role="group" aria-label="Choisir une photographie"><button class="wall-thumb" type="button" data-wall-work="0" aria-pressed="true" aria-label="Deux bouquetins face à face, presque effacés dans la brume blanche"><img src="assets/img/oeuvres/animal/bouquetins-brume-480.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="54px" width="5184" height="3888" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="1" aria-pressed="false" aria-label="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="54px" width="7604" height="7604" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="2" aria-pressed="false" aria-label="Carpes koï nageant dans le reflet des nuages"><img src="assets/img/oeuvres/koi/koi-nuages-reflets-480.webp" srcset="assets/img/oeuvres/koi/koi-nuages-reflets-480.webp 480w, assets/img/oeuvres/koi/koi-nuages-reflets-960.webp 960w, assets/img/oeuvres/koi/koi-nuages-reflets-1600.webp 1600w, assets/img/oeuvres/koi/koi-nuages-reflets-2400.webp 2400w" sizes="54px" width="3888" height="3888" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="3" aria-pressed="false" aria-label="Branche fine devant une cascade floue"><img src="assets/img/oeuvres/shinto/cascade-branche-480.webp" srcset="assets/img/oeuvres/shinto/cascade-branche-480.webp 480w, assets/img/oeuvres/shinto/cascade-branche-960.webp 960w, assets/img/oeuvres/shinto/cascade-branche-1600.webp 1600w, assets/img/oeuvres/shinto/cascade-branche-2400.webp 2400w" sizes="54px" width="3000" height="4000" alt="" loading="lazy" decoding="async"></button></div>
             <div class="seg" role="group" aria-label="Taille, côté le plus long"><button type="button" data-wall-size="60" aria-pressed="false">60 cm</button><button type="button" data-wall-size="90" aria-pressed="true">90 cm</button><button type="button" data-wall-size="120" aria-pressed="false">120 cm</button></div>
           </div>
-          <p class="form__note" style="margin-top: 12px">Formats illustratifs : les formats réels des tirages sont à compléter avec l’auteur.</p>
+          <p class="form__note" style="margin-top: 12px">Formats illustratifs : les formats réels des tirages sont à compléter avec l’auteur.</p>
         </div>
         <aside class="prints__aside">
           <figure class="prints__atelier"><img src="assets/img/grok/atelier-cadres-4x5-784.webp" srcset="assets/img/grok/atelier-cadres-4x5-784.webp 784w" sizes="(max-width: 900px) 90vw, 30vw" width="784" height="1168" alt="Coin d’atelier sombre avec des cadres vides et des feuilles de papier blanc" loading="lazy" decoding="async"><figcaption class="mono mono--plain">Visuel d’ambiance</figcaption></figure>
           <div class="btn-row">
-            <a class="btn btn--primary" href="tirages.html" data-magnetic data-attract>Tout sur les tirages <span class="arrow" aria-hidden="true">→</span></a>
-            <button class="btn" type="button" data-prefill="Tirage d’art" data-message="Bonjour, je souhaite connaître les formats et les prix de vos tirages d’art." data-prefill-page="tirages.html">Demander un tirage</button>
+            <a class="btn btn--primary" href="tirages" data-magnetic data-attract>Tout sur les tirages <span class="arrow" aria-hidden="true">→</span></a>
+            <button class="btn" type="button" data-prefill="Tirage d’art" data-message="Bonjour, je souhaite connaître les formats et les prix de vos tirages d’art." data-prefill-page="tirages">Demander un tirage</button>
           </div>
         </aside>
       </div>
@@ -262,7 +268,7 @@
   <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
     <div class="contact__bg" aria-hidden="true"><img src="assets/img/grok/mousse-macro-16x9-1168.webp" srcset="assets/img/grok/mousse-macro-16x9-800.webp 800w, assets/img/grok/mousse-macro-16x9-1168.webp 1168w" sizes="100vw" width="1168" height="784" alt="" loading="lazy" decoding="async"></div>
     <div class="wrap">
-      <figure class="contact__band"><div data-unveil><img src="assets/img/oeuvres/koi-panoramique-1600.webp" srcset="assets/img/oeuvres/koi-panoramique-480.webp 480w, assets/img/oeuvres/koi-panoramique-960.webp 960w, assets/img/oeuvres/koi-panoramique-1600.webp 1600w, assets/img/oeuvres/koi-panoramique-2400.webp 2400w" sizes="(max-width: 1440px) 94vw, 1330px" width="4032" height="1561" alt="Panoramique : une carpe koï claire glisse dans une eau sombre" loading="lazy" decoding="async"></div><figcaption class="mono mono--plain">Carpe koï, panoramique</figcaption></figure>
+      <figure class="contact__band"><div data-unveil><img src="assets/img/oeuvres/koi-panoramique-1600.webp" srcset="assets/img/oeuvres/koi-panoramique-480.webp 480w, assets/img/oeuvres/koi-panoramique-960.webp 960w, assets/img/oeuvres/koi-panoramique-1600.webp 1600w, assets/img/oeuvres/koi-panoramique-2400.webp 2400w" sizes="(max-width: 1440px) 94vw, 1330px" width="4032" height="1561" alt="Panoramique : une carpe koï claire glisse dans une eau sombre" loading="lazy" decoding="async"></div><figcaption class="mono mono--plain">Carpe koï, panoramique</figcaption></figure>
       <div class="contact__grid">
         <div>
           <p class="eyebrow mono">Contact</p>
@@ -275,7 +281,7 @@
             <li class="coord"><span class="k mono">Atelier</span><span class="v">Toulon (Var), visite sur rendez-vous</span><span></span></li>
           </ul>
           <div class="socials"><a class="link ext" href="https://www.instagram.com/laurent_barrera/" target="_blank" rel="noopener">Instagram <span class="mono" style="color: var(--ivory-3)">@laurent_barrera</span></a><a class="link ext" href="https://www.youtube.com/channel/UCdK5rTpqlTX0H5w4Ir0e7Fw" target="_blank" rel="noopener">YouTube <span class="mono" style="color: var(--ivory-3)">Chaîne YouTube</span></a><a class="link ext" href="https://twitter.com/LaurentBarrera" target="_blank" rel="noopener">X <span class="mono" style="color: var(--ivory-3)">@LaurentBarrera</span></a></div>
-          <div class="btn-row" style="margin-top: 28px"><a class="btn btn--primary" href="contact.html" data-magnetic data-attract>Écrire un message <span class="arrow" aria-hidden="true">→</span></a></div>
+          <div class="btn-row" style="margin-top: 28px"><a class="btn btn--primary" href="contact" data-magnetic data-attract>Écrire un message <span class="arrow" aria-hidden="true">→</span></a></div>
         </div>
       </div>
     </div>
@@ -285,9 +291,9 @@
   <div class="wrap">
     <div class="site-footer__grid site-footer__grid--5">
       <div><h2>Laurent Barrera</h2><p>Auteur et photographe. Atelier à Toulon (Var), visite sur rendez-vous.</p><p style="margin-top: 12px"><span class="v" style="user-select: all">laurentbarrera@hotmail.com</span><br>06 64 63 23 11</p></div>
-      <div><p class="mono">Séries</p><ul><li><a href="series/horses-kami.html">Horses Kami</a></li><li><a href="series/koi.html">Carpes Koï</a></li><li><a href="series/animal.html">Animal</a></li><li><a href="series/protean.html">Protean</a></li><li><a href="series/shinto.html">Shintô</a></li><li><a href="series/divers.html">Divers</a></li></ul></div>
-      <div><p class="mono">Livres</p><ul><li><a href="livres/les-arbres-sacres-du-japon.html">Les arbres sacrés du Japon</a></li><li><a href="livres/pleine-presence-en-photographie.html">Pleine Présence en Photographie</a></li><li><a href="livres/esthetiques-japonaises-en-photographie.html">Esthétiques japonaises en photographie</a></li><li><a href="livres/fragrances-du-japon.html">Fragrances du Japon</a></li><li><a href="livres/koi.html">Koï</a></li></ul></div>
-      <div><p class="mono">Rubriques</p><ul><li><a href="parcours.html">Parcours</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="tirages.html">Tirages d’art</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="mono">Séries</p><ul><li><a href="series/horses-kami">Horses Kami</a></li><li><a href="series/koi">Carpes Koï</a></li><li><a href="series/animal">Animal</a></li><li><a href="series/protean">Protean</a></li><li><a href="series/shinto">Shintô</a></li><li><a href="series/divers">Divers</a></li></ul></div>
+      <div><p class="mono">Livres</p><ul><li><a href="livres/les-arbres-sacres-du-japon">Les arbres sacrés du Japon</a></li><li><a href="livres/pleine-presence-en-photographie">Pleine Présence en Photographie</a></li><li><a href="livres/esthetiques-japonaises-en-photographie">Esthétiques japonaises en photographie</a></li><li><a href="livres/fragrances-du-japon">Fragrances du Japon</a></li><li><a href="livres/koi">Koï</a></li></ul></div>
+      <div><p class="mono">Rubriques</p><ul><li><a href="parcours">Parcours</a></li><li><a href="actualites">Actualités</a></li><li><a href="tirages">Tirages d’art</a></li><li><a href="contact">Contact</a></li></ul></div>
       <div><p class="mono">Suivre</p><ul><li><a class=" ext" href="https://www.instagram.com/laurent_barrera/" target="_blank" rel="noopener">Instagram</a></li><li><a class=" ext" href="https://www.youtube.com/channel/UCdK5rTpqlTX0H5w4Ir0e7Fw" target="_blank" rel="noopener">YouTube</a></li><li><a class=" ext" href="https://twitter.com/LaurentBarrera" target="_blank" rel="noopener">X</a></li><li><a class=" ext" href="https://www.amazon.fr/stores/Laurent-Barrera/author/B0FX4K1JQ9?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener">Page auteur Amazon</a></li></ul></div>
     </div>
     <div class="site-footer__base">
@@ -303,20 +309,15 @@
   <div class="drawer__body"></div>
   <div class="drawer__foot">
     <div class="total"><span>Total, hors frais d’envoi</span><b data-total>0 €</b></div>
-    <p class="form__note">Frais d’envoi : à compléter. Paiement : aujourd’hui par mail ou message Instagram, mode à définir pour le site final.</p>
+    <p class="form__note">Frais d’envoi : à compléter. Paiement : aujourd’hui par mail ou message Instagram, mode à définir pour le site final.</p>
     <button class="btn btn--primary" type="button" data-checkout>Envoyer la demande de commande</button>
     <p class="form__status" role="status" hidden></p>
   </div>
 </aside>
 <script>window.LB_DATA = Object.assign(window.LB_DATA || {}, {"prefix":""});</script>
-<script src="assets/js/vendor/gsap.min.js" defer></script>
-<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/vendor/SplitText.min.js" defer></script>
-<script src="assets/js/vendor/lenis.js" defer></script>
-<script src="assets/js/data.js" defer></script>
-<script src="assets/js/core.js" defer></script>
-<script type="module" src="assets/js/fog.js"></script>
-<script src="assets/js/sections.js" defer></script>
-<script src="assets/js/home.js" defer></script>
+<script src="assets/js/vendor.js?v=7130dcb9" defer></script>
+<script src="assets/js/site.js?v=e6ed944e" defer></script>
+<script src="assets/js/fog.js?v=edf857d8" defer></script>
+<script src="assets/js/home.js?v=394acc65" defer></script>
 </body>
 </html>

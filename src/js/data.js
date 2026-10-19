@@ -39,6 +39,7 @@ window.LB_DATA = Object.assign(window.LB_DATA || {}, {
   {
    "key": "oeuvres/animal/bouquetins-brume",
    "src": "assets/img/oeuvres/animal/bouquetins-brume-960.webp",
+   "srcset": "assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w",
    "w": 5184,
    "h": 3888,
    "alt": "Deux bouquetins face à face, presque effacés dans la brume blanche"
@@ -46,6 +47,7 @@ window.LB_DATA = Object.assign(window.LB_DATA || {}, {
   {
    "key": "oeuvres/horses-kami/trois-chevaux-face",
    "src": "assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp",
+   "srcset": "assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w",
    "w": 7604,
    "h": 7604,
    "alt": "Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas"
@@ -53,6 +55,7 @@ window.LB_DATA = Object.assign(window.LB_DATA || {}, {
   {
    "key": "oeuvres/koi/koi-nuages-reflets",
    "src": "assets/img/oeuvres/koi/koi-nuages-reflets-960.webp",
+   "srcset": "assets/img/oeuvres/koi/koi-nuages-reflets-480.webp 480w, assets/img/oeuvres/koi/koi-nuages-reflets-960.webp 960w, assets/img/oeuvres/koi/koi-nuages-reflets-1600.webp 1600w, assets/img/oeuvres/koi/koi-nuages-reflets-2400.webp 2400w",
    "w": 3888,
    "h": 3888,
    "alt": "Carpes koï nageant dans le reflet des nuages"
@@ -60,9 +63,14 @@ window.LB_DATA = Object.assign(window.LB_DATA || {}, {
   {
    "key": "oeuvres/shinto/cascade-branche",
    "src": "assets/img/oeuvres/shinto/cascade-branche-960.webp",
+   "srcset": "assets/img/oeuvres/shinto/cascade-branche-480.webp 480w, assets/img/oeuvres/shinto/cascade-branche-960.webp 960w, assets/img/oeuvres/shinto/cascade-branche-1600.webp 1600w, assets/img/oeuvres/shinto/cascade-branche-2400.webp 2400w",
    "w": 3000,
    "h": 4000,
    "alt": "Branche fine devant une cascade floue"
   }
- ]
+ ],
+ "urls": {
+  "contact": "contact",
+  "parcours": "parcours"
+ }
 });

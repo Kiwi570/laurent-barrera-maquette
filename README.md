@@ -1,4 +1,4 @@
-# Laurent Barrera — maquette v2 « Sous-bois sacré »
+# Laurent Barrera — maquette v3 « Sous-bois sacré »
 
 Site statique (HTML, CSS, JavaScript), sans étape de construction, prêt pour Vercel (`vercel.json`, adresses propres).
 
@@ -34,6 +34,16 @@ Site statique (HTML, CSS, JavaScript), sans étape de construction, prêt pour V
 ## Simulations
 
 Formulaires, panier et rappel de parution sont simulés : rien n'est envoyé. Les liens Amazon et les articles du blog pointent vers les vraies pages.
+
+## Organisation des fichiers (v3)
+
+- `src/` : sources lisibles (JavaScript, CSS, bibliothèques). Non publiées sur Vercel (`.vercelignore`).
+- `assets/js/` et `assets/css/` : versions regroupées et minifiées servies par le site, générées à partir de `src/`.
+  `vendor.js` (GSAP, ScrollTrigger, SplitText, Lenis), `site.js` (commun à toutes les pages), `fog.js` (brume WebGL), puis un script par type de page.
+- `assets/fonts/` : polices WOFF2 allégées (jeu de caractères latin, axes utiles seulement).
+- Les liens internes sont sans « .html » (adresses propres de Vercel), et chaque fichier CSS ou JS porte une empreinte `?v=` : le cache navigateur se renouvelle à chaque mise à jour.
+- `404.html` : page « Perdu dans la brume » pour les adresses inconnues.
+- Pour ouvrir le site en local avec ces adresses propres : `npx serve` dans le dossier (un simple double-clic sur un fichier HTML ne suit pas les liens).
 
 ## Crédits techniques
 

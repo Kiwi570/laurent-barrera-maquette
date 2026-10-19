@@ -5,34 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tirages d’art · Laurent Barrera</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Tirages d’art numérotés de Laurent Barrera : voir l’œuvre au mur à l’échelle, choisir dans six séries, demander formats et prix.">
+<meta name="description" content="Tirages d’art numérotés de Laurent Barrera : voir l’œuvre au mur à l’échelle, choisir dans six séries, demander formats et prix.">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0e1210">
 <meta property="og:title" content="Tirages d’art · Laurent Barrera">
-<meta property="og:description" content="Tirages d’art numérotés de Laurent Barrera : voir l’œuvre au mur à l’échelle, choisir dans six séries, demander formats et prix.">
+<meta property="og:description" content="Tirages d’art numérotés de Laurent Barrera : voir l’œuvre au mur à l’échelle, choisir dans six séries, demander formats et prix.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://laurent-barrera-maquette.vercel.app/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
-<link rel="preload" href="assets/fonts/fraunces-var.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/fonts/instrument-sans-var.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="assets/css/lenis.css">
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css?v=6b0a949f">
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="index.html" aria-label="Laurent Barrera, accueil"><img src="assets/img/logo/enso-320.webp" alt="" width="34" height="34"><span>Laurent Barrera</span></a>
+    <a class="brand" href="./" aria-label="Laurent Barrera, accueil"><img src="assets/img/logo/enso-320.webp" alt="" width="34" height="34"><span>Laurent Barrera</span></a>
     <nav class="nav" aria-label="Navigation principale">
-      <a href="series/index.html">Séries</a>
-      <a href="livres/index.html">Livres</a>
-      <a href="parcours.html">Parcours</a>
-      <a href="actualites.html">Actualités</a>
-      <a href="tirages.html" aria-current="page">Tirages</a>
-      <a href="contact.html">Contact</a>
+      <a href="series">Séries</a>
+      <a href="livres">Livres</a>
+      <a href="parcours">Parcours</a>
+      <a href="actualites">Actualités</a>
+      <a href="tirages" aria-current="page">Tirages</a>
+      <a href="contact">Contact</a>
     </nav>
     <div class="header-tools">
-      <a class="pill-release" href="livres/les-arbres-sacres-du-japon.html"><i aria-hidden="true"></i><span class="long">Arbres sacrés · </span><span data-days-left>J-17</span><span class="sr-only"> avant la parution du livre Les arbres sacrés du Japon</span></a>
-      <button class="calm-toggle" type="button" data-calm-toggle aria-pressed="false" aria-label="Mode calme : réduire les animations"><span class="dot" aria-hidden="true"></span><span class="label" aria-hidden="true">Mode calme</span></button>
+      <a class="pill-release" href="livres/les-arbres-sacres-du-japon"><i aria-hidden="true"></i><span class="long">Arbres sacrés · </span><span data-days-left>J-17</span><span class="sr-only" data-released-text=", le livre Les arbres sacrés du Japon est paru"> avant la parution du livre Les arbres sacrés du Japon</span></a>
+      <button class="calm-toggle" type="button" data-calm-toggle aria-pressed="false" aria-label="Mode calme : réduire les animations"><span class="dot" aria-hidden="true"></span><span class="label" aria-hidden="true">Mode calme</span></button>
       <button class="icon-btn" type="button" data-open-cart aria-label="Ouvrir le panier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="cart-count" hidden>0</span></button>
       <button class="icon-btn menu-btn" type="button" data-menu-open aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
     </div>
@@ -40,14 +46,14 @@
 </header>
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
   <button class="icon-btn mobile-menu__close" type="button" data-menu-close aria-label="Fermer le menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-  <a href="index.html">Accueil</a>
-  <a href="series/index.html">Séries</a>
-  <a href="livres/index.html">Livres</a>
-  <a href="parcours.html">Parcours</a>
-  <a href="actualites.html">Actualités</a>
-  <a href="tirages.html" aria-current="page">Tirages</a>
-  <a href="contact.html">Contact</a>
-  <a href="livres/les-arbres-sacres-du-japon.html">Les arbres sacrés</a>
+  <a href="./">Accueil</a>
+  <a href="series">Séries</a>
+  <a href="livres">Livres</a>
+  <a href="parcours">Parcours</a>
+  <a href="actualites">Actualités</a>
+  <a href="tirages" aria-current="page">Tirages</a>
+  <a href="contact">Contact</a>
+  <a href="livres/les-arbres-sacres-du-japon">Les arbres sacrés</a>
   <p class="mono">laurentbarrera@hotmail.com · 06 64 63 23 11</p>
 </div>
 <div class="veil" aria-hidden="true"></div>
@@ -56,24 +62,24 @@
     <div class="fog" data-fog data-fog-auto data-fog-start data-fog-tex="assets/img/grok/brume-nuit-16x9-1168.webp" data-fog-focus=".72,.55" data-fog-density=".8"></div>
     <div class="wrap s-hero__grid">
       <div>
-        <nav class="crumbs mono" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a></nav>
+        <nav class="crumbs mono" aria-label="Fil d’Ariane"><a href="./">Accueil</a></nav>
         <p class="eyebrow mono s-hero__kicker">Tirages d’art</p>
         <h1 class="s-hero__title s-hero__title--page" id="page-title" data-focus>Voir l’œuvre au mur</h1>
         <p class="lead" style="margin-top: 26px; position: relative; z-index: 4">Les photographies de Laurent sont proposées en tirages d’art numérotés, prix sur demande. Essayez-les à l’échelle sur un mur, puis demandez formats et papiers.</p>
         <div class="s-hero__meta mono mono--plain"><span>Tirages numérotés</span><span>Atelier à Toulon, sur rendez-vous</span></div>
       </div>
-      <figure class="s-hero__figure"><img src="assets/img/oeuvres/animal/bouquetins-brume-1600.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) 92vw, 44vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" decoding="async" fetchpriority="high"><figcaption class="mono mono--plain" style="margin-top: 10px; color: var(--ivory-3); text-align: right">Série Animal</figcaption></figure>
+      <figure class="s-hero__figure"><img src="assets/img/oeuvres/animal/bouquetins-brume-1600.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) min(92vw, 72.0vh), min(44vw, 80.0vh)" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" decoding="async" fetchpriority="high"><figcaption class="mono mono--plain" style="margin-top: 10px; color: var(--ivory-3); text-align: right">Série Animal</figcaption></figure>
     </div>
   </section>
 
   <section class="prints section-pad" aria-labelledby="wall-title">
     <div class="wrap">
-      <div class="series-head"><div><p class="eyebrow mono">À l’échelle</p><h2 class="h2" id="wall-title" data-focus>Essayer <em>au mur</em></h2></div><p class="lead">Choisissez une photographie et une taille : le tirage se pose sur le mur, à côté d’un banc de 120 cm.</p></div>
+      <div class="series-head"><div><p class="eyebrow mono">À l’échelle</p><h2 class="h2" id="wall-title" data-focus>Essayer <em>au mur</em></h2></div><p class="lead">Choisissez une photographie et une taille : le tirage se pose sur le mur, à côté d’un banc de 120 cm.</p></div>
       <div class="prints__grid">
         <div>
           <div class="wall" data-wall>
             <img class="wall__bg" src="assets/img/grok/mur-galerie-16x9-1168.webp" alt="" width="1168" height="784" loading="lazy">
-            <div class="wall__art" style="width:33.904%;height:37.883%;left:33.048%;top:19.324%"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="40vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
+            <div class="wall__art" style="width:33.904%;height:37.883%;left:33.048%;top:19.324%"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 900px) 45vw, 27vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div>
             <div class="wall__dim mono mono--plain" style="width:33.904%;left:33.048%;top:58.737%"><span>90 × 68 cm</span></div>
             <p class="wall__note mono mono--plain">Échelle approximative · banc de 120 cm</p>
           </div>
@@ -81,7 +87,7 @@
             <div class="wall-thumbs" role="group" aria-label="Choisir une photographie"><button class="wall-thumb" type="button" data-wall-work="0" aria-pressed="true" aria-label="Deux bouquetins face à face, presque effacés dans la brume blanche"><img src="assets/img/oeuvres/animal/bouquetins-brume-480.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="54px" width="5184" height="3888" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="1" aria-pressed="false" aria-label="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="54px" width="7604" height="7604" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="2" aria-pressed="false" aria-label="Carpes koï nageant dans le reflet des nuages"><img src="assets/img/oeuvres/koi/koi-nuages-reflets-480.webp" srcset="assets/img/oeuvres/koi/koi-nuages-reflets-480.webp 480w, assets/img/oeuvres/koi/koi-nuages-reflets-960.webp 960w, assets/img/oeuvres/koi/koi-nuages-reflets-1600.webp 1600w, assets/img/oeuvres/koi/koi-nuages-reflets-2400.webp 2400w" sizes="54px" width="3888" height="3888" alt="" loading="lazy" decoding="async"></button><button class="wall-thumb" type="button" data-wall-work="3" aria-pressed="false" aria-label="Branche fine devant une cascade floue"><img src="assets/img/oeuvres/shinto/cascade-branche-480.webp" srcset="assets/img/oeuvres/shinto/cascade-branche-480.webp 480w, assets/img/oeuvres/shinto/cascade-branche-960.webp 960w, assets/img/oeuvres/shinto/cascade-branche-1600.webp 1600w, assets/img/oeuvres/shinto/cascade-branche-2400.webp 2400w" sizes="54px" width="3000" height="4000" alt="" loading="lazy" decoding="async"></button></div>
             <div class="seg" role="group" aria-label="Taille, côté le plus long"><button type="button" data-wall-size="60" aria-pressed="false">60 cm</button><button type="button" data-wall-size="90" aria-pressed="true">90 cm</button><button type="button" data-wall-size="120" aria-pressed="false">120 cm</button></div>
           </div>
-          <p class="form__note" style="margin-top: 12px">Formats illustratifs : les formats réels des tirages sont à compléter avec l’auteur.</p>
+          <p class="form__note" style="margin-top: 12px">Formats illustratifs : les formats réels des tirages sont à compléter avec l’auteur.</p>
         </div>
         <aside class="prints__aside">
           <dl class="specs">
@@ -99,14 +105,14 @@
 
   <section class="section-pad" aria-labelledby="choose-title" style="padding-top: 0">
     <div class="wrap">
-      <div class="series-head"><div><p class="eyebrow mono">Choisir</p><h2 class="h2" id="choose-title" data-focus>Dans les <em>six séries</em></h2></div><p class="lead">Chaque photographie peut être demandée en tirage. Ouvrez une série, agrandissez une image, puis « Demander ce tirage ».</p></div>
+      <div class="series-head"><div><p class="eyebrow mono">Choisir</p><h2 class="h2" id="choose-title" data-focus>Dans les <em>six séries</em></h2></div><p class="lead">Chaque photographie peut être demandée en tirage. Ouvrez une série, agrandissez une image, puis « Demander ce tirage ».</p></div>
       <div class="tiles" data-stagger>
-        <a class="tile" href="series/horses-kami.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="7604" height="7604" alt="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas" loading="lazy" decoding="async"></div><span class="tile__name">Horses Kami</span><span class="mono">9 photographies</span></a>
-        <a class="tile" href="series/koi.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/koi/koi-branches-remous-960.webp" srcset="assets/img/oeuvres/koi/koi-branches-remous-480.webp 480w, assets/img/oeuvres/koi/koi-branches-remous-960.webp 960w, assets/img/oeuvres/koi/koi-branches-remous-1600.webp 1600w, assets/img/oeuvres/koi/koi-branches-remous-2400.webp 2400w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="3458" height="2594" alt="Carpes koï orange et rouge dans le reflet de branches, un remous au centre" loading="lazy" decoding="async"></div><span class="tile__name">Carpes Koï</span><span class="mono">9 photographies</span></a>
-        <a class="tile" href="series/animal.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div><span class="tile__name">Animal</span><span class="mono">6 photographies</span></a>
-        <a class="tile" href="series/protean.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/protean/lune-arbre-mort-600.webp" srcset="assets/img/oeuvres/protean/lune-arbre-mort-480.webp 480w, assets/img/oeuvres/protean/lune-arbre-mort-600.webp 600w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="600" height="800" alt="Branches d'un arbre mort sous un fin croissant de lune" loading="lazy" decoding="async"></div><span class="tile__name">Protean</span><span class="mono">9 photographies</span></a>
-        <a class="tile" href="series/shinto.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/shinto/temple-brume-montagne-960.webp" srcset="assets/img/oeuvres/shinto/temple-brume-montagne-480.webp 480w, assets/img/oeuvres/shinto/temple-brume-montagne-960.webp 960w, assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp 1600w, assets/img/oeuvres/shinto/temple-brume-montagne-2400.webp 2400w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="3621" height="4828" alt="Temple de bois au pied de montagnes dans la brume" loading="lazy" decoding="async"></div><span class="tile__name">Shintô</span><span class="mono">6 photographies</span></a>
-        <a class="tile" href="series/divers.html" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/divers/aube-brume-maison-960.webp" srcset="assets/img/oeuvres/divers/aube-brume-maison-480.webp 480w, assets/img/oeuvres/divers/aube-brume-maison-960.webp 960w, assets/img/oeuvres/divers/aube-brume-maison-1600.webp 1600w, assets/img/oeuvres/divers/aube-brume-maison-2400.webp 2400w" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 30vw" width="4952" height="3714" alt="Silhouette d'une maison dans la brume de l'aube" loading="lazy" decoding="async"></div><span class="tile__name">Divers</span><span class="mono">4 photographies</span></a>
+        <a class="tile" href="series/horses-kami" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp" srcset="assets/img/oeuvres/horses-kami/trois-chevaux-face-480.webp 480w, assets/img/oeuvres/horses-kami/trois-chevaux-face-960.webp 960w, assets/img/oeuvres/horses-kami/trois-chevaux-face-1600.webp 1600w, assets/img/oeuvres/horses-kami/trois-chevaux-face-2400.webp 2400w" sizes="(max-width: 600px) 69vw, (max-width: 1100px) 35vw, 23vw" width="7604" height="7604" alt="Trois chevaux blancs de face, serrés les uns contre les autres, ciel bas" loading="lazy" decoding="async"></div><span class="tile__name">Horses Kami</span><span class="mono">9 photographies</span></a>
+        <a class="tile" href="series/koi" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/koi/koi-branches-remous-960.webp" srcset="assets/img/oeuvres/koi/koi-branches-remous-480.webp 480w, assets/img/oeuvres/koi/koi-branches-remous-960.webp 960w, assets/img/oeuvres/koi/koi-branches-remous-1600.webp 1600w, assets/img/oeuvres/koi/koi-branches-remous-2400.webp 2400w" sizes="(max-width: 600px) 92vw, (max-width: 1100px) 46vw, 30vw" width="3458" height="2594" alt="Carpes koï orange et rouge dans le reflet de branches, un remous au centre" loading="lazy" decoding="async"></div><span class="tile__name">Carpes Koï</span><span class="mono">9 photographies</span></a>
+        <a class="tile" href="series/animal" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/animal/bouquetins-brume-960.webp" srcset="assets/img/oeuvres/animal/bouquetins-brume-480.webp 480w, assets/img/oeuvres/animal/bouquetins-brume-960.webp 960w, assets/img/oeuvres/animal/bouquetins-brume-1600.webp 1600w, assets/img/oeuvres/animal/bouquetins-brume-2400.webp 2400w" sizes="(max-width: 600px) 92vw, (max-width: 1100px) 46vw, 30vw" width="5184" height="3888" alt="Deux bouquetins face à face, presque effacés dans la brume blanche" loading="lazy" decoding="async"></div><span class="tile__name">Animal</span><span class="mono">6 photographies</span></a>
+        <a class="tile" href="series/protean" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/protean/lune-arbre-mort-600.webp" srcset="assets/img/oeuvres/protean/lune-arbre-mort-480.webp 480w, assets/img/oeuvres/protean/lune-arbre-mort-600.webp 600w" sizes="(max-width: 600px) 52vw, (max-width: 1100px) 26vw, 17vw" width="600" height="800" alt="Branches d'un arbre mort sous un fin croissant de lune" loading="lazy" decoding="async"></div><span class="tile__name">Protean</span><span class="mono">9 photographies</span></a>
+        <a class="tile" href="series/shinto" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/shinto/temple-brume-montagne-960.webp" srcset="assets/img/oeuvres/shinto/temple-brume-montagne-480.webp 480w, assets/img/oeuvres/shinto/temple-brume-montagne-960.webp 960w, assets/img/oeuvres/shinto/temple-brume-montagne-1600.webp 1600w, assets/img/oeuvres/shinto/temple-brume-montagne-2400.webp 2400w" sizes="(max-width: 600px) 52vw, (max-width: 1100px) 26vw, 17vw" width="3621" height="4828" alt="Temple de bois au pied de montagnes dans la brume" loading="lazy" decoding="async"></div><span class="tile__name">Shintô</span><span class="mono">6 photographies</span></a>
+        <a class="tile" href="series/divers" data-cursor="Entrer"><div class="tile__media"><img src="assets/img/oeuvres/divers/aube-brume-maison-960.webp" srcset="assets/img/oeuvres/divers/aube-brume-maison-480.webp 480w, assets/img/oeuvres/divers/aube-brume-maison-960.webp 960w, assets/img/oeuvres/divers/aube-brume-maison-1600.webp 1600w, assets/img/oeuvres/divers/aube-brume-maison-2400.webp 2400w" sizes="(max-width: 600px) 92vw, (max-width: 1100px) 46vw, 30vw" width="4952" height="3714" alt="Silhouette d'une maison dans la brume de l'aube" loading="lazy" decoding="async"></div><span class="tile__name">Divers</span><span class="mono">4 photographies</span></a>
       </div>
     </div>
   </section>
@@ -138,7 +144,7 @@
             <li class="coord"><span class="k mono">Atelier</span><span class="v">Toulon (Var), visite sur rendez-vous</span><span></span></li>
           </ul>
       </div>
-      <form class="form" id="print-request" data-prefill-target data-sim="Simulation : votre message n’a pas été envoyé. Dans le site final, il arrivera directement dans la boîte de Laurent.">
+      <form class="form" id="print-request" data-prefill-target data-sim="Simulation : votre message n’a pas été envoyé. Dans le site final, il arrivera directement dans la boîte de Laurent.">
           <div class="field-row">
             <div class="field"><label for="f-name">Nom</label><input id="f-name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -146,7 +152,7 @@
           <div class="field"><label for="f-subject">Objet</label><select id="f-subject" name="subject"><option>Tirage d’art</option><option>Visite de l’atelier</option><option>Autre</option></select></div>
           <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" required></textarea></div>
           <div class="btn-row"><button class="btn btn--primary" type="submit" data-magnetic data-attract>Envoyer le message</button></div>
-          <p class="form__note">Maquette : formulaire simulé, aucun message n’est envoyé.</p>
+          <p class="form__note">Maquette : formulaire simulé, aucun message n’est envoyé.</p>
           <p class="form__status" role="status" hidden></p>
         </form>
     </div>
@@ -156,9 +162,9 @@
   <div class="wrap">
     <div class="site-footer__grid site-footer__grid--5">
       <div><h2>Laurent Barrera</h2><p>Auteur et photographe. Atelier à Toulon (Var), visite sur rendez-vous.</p><p style="margin-top: 12px"><span class="v" style="user-select: all">laurentbarrera@hotmail.com</span><br>06 64 63 23 11</p></div>
-      <div><p class="mono">Séries</p><ul><li><a href="series/horses-kami.html">Horses Kami</a></li><li><a href="series/koi.html">Carpes Koï</a></li><li><a href="series/animal.html">Animal</a></li><li><a href="series/protean.html">Protean</a></li><li><a href="series/shinto.html">Shintô</a></li><li><a href="series/divers.html">Divers</a></li></ul></div>
-      <div><p class="mono">Livres</p><ul><li><a href="livres/les-arbres-sacres-du-japon.html">Les arbres sacrés du Japon</a></li><li><a href="livres/pleine-presence-en-photographie.html">Pleine Présence en Photographie</a></li><li><a href="livres/esthetiques-japonaises-en-photographie.html">Esthétiques japonaises en photographie</a></li><li><a href="livres/fragrances-du-japon.html">Fragrances du Japon</a></li><li><a href="livres/koi.html">Koï</a></li></ul></div>
-      <div><p class="mono">Rubriques</p><ul><li><a href="parcours.html">Parcours</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="tirages.html">Tirages d’art</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="mono">Séries</p><ul><li><a href="series/horses-kami">Horses Kami</a></li><li><a href="series/koi">Carpes Koï</a></li><li><a href="series/animal">Animal</a></li><li><a href="series/protean">Protean</a></li><li><a href="series/shinto">Shintô</a></li><li><a href="series/divers">Divers</a></li></ul></div>
+      <div><p class="mono">Livres</p><ul><li><a href="livres/les-arbres-sacres-du-japon">Les arbres sacrés du Japon</a></li><li><a href="livres/pleine-presence-en-photographie">Pleine Présence en Photographie</a></li><li><a href="livres/esthetiques-japonaises-en-photographie">Esthétiques japonaises en photographie</a></li><li><a href="livres/fragrances-du-japon">Fragrances du Japon</a></li><li><a href="livres/koi">Koï</a></li></ul></div>
+      <div><p class="mono">Rubriques</p><ul><li><a href="parcours">Parcours</a></li><li><a href="actualites">Actualités</a></li><li><a href="tirages">Tirages d’art</a></li><li><a href="contact">Contact</a></li></ul></div>
       <div><p class="mono">Suivre</p><ul><li><a class=" ext" href="https://www.instagram.com/laurent_barrera/" target="_blank" rel="noopener">Instagram</a></li><li><a class=" ext" href="https://www.youtube.com/channel/UCdK5rTpqlTX0H5w4Ir0e7Fw" target="_blank" rel="noopener">YouTube</a></li><li><a class=" ext" href="https://twitter.com/LaurentBarrera" target="_blank" rel="noopener">X</a></li><li><a class=" ext" href="https://www.amazon.fr/stores/Laurent-Barrera/author/B0FX4K1JQ9?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noopener">Page auteur Amazon</a></li></ul></div>
     </div>
     <div class="site-footer__base">
@@ -174,20 +180,15 @@
   <div class="drawer__body"></div>
   <div class="drawer__foot">
     <div class="total"><span>Total, hors frais d’envoi</span><b data-total>0 €</b></div>
-    <p class="form__note">Frais d’envoi : à compléter. Paiement : aujourd’hui par mail ou message Instagram, mode à définir pour le site final.</p>
+    <p class="form__note">Frais d’envoi : à compléter. Paiement : aujourd’hui par mail ou message Instagram, mode à définir pour le site final.</p>
     <button class="btn btn--primary" type="button" data-checkout>Envoyer la demande de commande</button>
     <p class="form__status" role="status" hidden></p>
   </div>
 </aside>
 <script>window.LB_DATA = Object.assign(window.LB_DATA || {}, {"prefix":""});</script>
-<script src="assets/js/vendor/gsap.min.js" defer></script>
-<script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
-<script src="assets/js/vendor/SplitText.min.js" defer></script>
-<script src="assets/js/vendor/lenis.js" defer></script>
-<script src="assets/js/data.js" defer></script>
-<script src="assets/js/core.js" defer></script>
-<script type="module" src="assets/js/fog.js"></script>
-<script src="assets/js/sections.js" defer></script>
+<script src="assets/js/vendor.js?v=7130dcb9" defer></script>
+<script src="assets/js/site.js?v=e6ed944e" defer></script>
+<script src="assets/js/fog.js?v=edf857d8" defer></script>
 
 </body>
 </html>

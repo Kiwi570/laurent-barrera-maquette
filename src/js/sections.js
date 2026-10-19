@@ -91,7 +91,7 @@
         wallState.work = parseInt(b.getAttribute('data-wall-work'), 10);
         d.querySelectorAll('[data-wall-work]').forEach(function (o) { o.setAttribute('aria-pressed', o === b ? 'true' : 'false'); });
         var w = DATA.wallWorks[wallState.work];
-        artImg.src = w.src; artImg.alt = w.alt;
+        artImg.srcset = w.srcset || ''; artImg.src = w.src; artImg.alt = w.alt;
         placeWall();
       });
     });
@@ -136,12 +136,12 @@
     /* Manifesto: words light up as you read */
     var mt = d.querySelector('.manifesto__text');
     if (mt && window.SplitText) {
-      var sp2 = new SplitText(mt, { type: 'words', wordsClass: 'w' });
+      var sp2 = new SplitText(mt, { type: 'words', wordsClass: 'w', aria: 'none' });
       gsap.fromTo(sp2.words, { opacity: .14 }, { opacity: 1, ease: 'none', stagger: .05, scrollTrigger: { trigger: mt, start: 'top 78%', end: 'bottom 45%', scrub: .6 } });
     }
 
     /* Shelf: the spines turn to show their covers */
-    if (d.querySelector('.shelf')) gsap.fromTo('.shelf-book', { rotationY: -78, x: -20, opacity: .3, transformOrigin: '0% 50%' }, { rotationY: 0, x: 0, opacity: 1, duration: 1.6, ease: 'expo.out', stagger: .12, scrollTrigger: { trigger: '.shelf', start: 'top 82%', once: true } });
+    if (d.querySelector('.shelf')) gsap.fromTo('.shelf-book', { rotationY: -78, x: -20, opacity: .3, transformOrigin: '0% 50%' }, { rotationY: 0, x: 0, opacity: 1, duration: 1.6, ease: 'expo.out', stagger: .12, clearProps: 'opacity,transform,transformOrigin', scrollTrigger: { trigger: '.shelf', start: 'top 82%', once: true } });
 
     /* Parcours: rings grow from the heart of the trunk; the current year lights up */
     var trunk = d.querySelector('.trunk');
@@ -160,7 +160,7 @@
         } });
       });
       trings.forEach(function (c) {
-        c.addEventListener('click', function () { var yb = d.querySelector('.year-block[data-year="' + c.getAttribute('data-year') + '"]'); if (yb && LB.lenis) LB.lenis.scrollTo(yb, { offset: -120 }); else if (!yb) window.location.href = (DATA.prefix || '') + 'parcours.html'; });
+        c.addEventListener('click', function () { var yb = d.querySelector('.year-block[data-year="' + c.getAttribute('data-year') + '"]'); if (yb && LB.lenis) LB.lenis.scrollTo(yb, { offset: -120 }); else if (!yb) window.location.href = (DATA.prefix || '') + ((DATA.urls && DATA.urls.parcours) || 'parcours.html'); });
       });
     }
 
@@ -168,7 +168,8 @@
     var mq = d.querySelector('.marquee__track');
     if (mq) {
       var half = mq.scrollWidth / 2;
-      var loop = gsap.to(mq, { x: -half, duration: 60, ease: 'none', repeat: -1 });
+      var loop = gsap.to(mq, { x: -half, duration: 60, ease: 'none', repeat: -1, paused: true });
+      ScrollTrigger.create({ trigger: '.marquee', start: 'top bottom', end: 'bottom top', onToggle: function (st) { if (st.isActive) loop.play(); else loop.pause(); } });
       var boost = { v: 1 };
       ScrollTrigger.create({ trigger: '.distinctions', start: 'top bottom', end: 'bottom top', onUpdate: function (s) {
         var v = Math.min(5, 1 + Math.abs(s.getVelocity()) / 300);
